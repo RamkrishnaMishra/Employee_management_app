@@ -5,7 +5,7 @@ String userName = request.getParameter("userName");
 String password = request.getParameter("password");
 Class.forName("com.mysql.jdbc.Driver");
 String url = "jdbc:mysql://localhost:3306/ems";
-Connection conn = DriverManager.getConnection(url,"root","mis~hra");
+Connection conn = DriverManager.getConnection(url,"root","<password>");
 Statement stmt = conn.createStatement();
 ResultSet rs;
 rs = stmt.executeQuery("select * from login_table where username='" + userName + "' and password='" +password + "'");
