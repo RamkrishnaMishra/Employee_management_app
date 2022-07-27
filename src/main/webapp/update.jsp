@@ -16,7 +16,7 @@
         ResultSet rs;
         
         Class.forName("com.mysql.jdbc.Driver");
-        con = DriverManager.getConnection("jdbc:mysql://localhost/ems","root","mis~hra");
+        con = DriverManager.getConnection("jdbc:mysql://localhost/ems","root","<password>");
         pst = con.prepareStatement("update records set  where id = ?,first_tname = ?,last_tname = ?,email = ?,desgination =?,joining_date= ?");
         pst.setString(1, id);
         pst.setString(2, first_name);
