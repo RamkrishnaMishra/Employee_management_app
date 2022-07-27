@@ -8,7 +8,7 @@ String lastName = request.getParameter("lastName");
 String email = request.getParameter("email");
 Class.forName("com.mysql.jdbc.Driver");
 String url = "jdbc:mysql://localhost:3306/ems";
-Connection conn = DriverManager.getConnection(url,"root","mis~hra");
+Connection conn = DriverManager.getConnection(url,"root","<password>");
 Statement stmt = conn.createStatement();
 int i = stmt.executeUpdate("insert into employee_table (first_name, last_name, email, desgination, joining_date, ID) values ('" + firstName + "','"
 + lastName + "','" + email + "','" + desgination + "','" + joining_date + "','"+ ID +"')");
