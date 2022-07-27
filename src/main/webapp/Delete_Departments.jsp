@@ -7,7 +7,7 @@ try
 {
 	Class.forName("com.mysql.jdbc.Driver");
 	String url = "jdbc:mysql://localhost:3306/ems";
-	Connection conn = DriverManager.getConnection(url,"root","mis~hra");
+	Connection conn = DriverManager.getConnection(url,"root","<password>");
 	Statement stmt = conn.createStatement();
 int i=stmt.executeUpdate("DELETE FROM departments WHERE id="+ID);
 out.println("Data Deleted Successfully!");
